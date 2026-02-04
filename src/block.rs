@@ -11,6 +11,7 @@ pub struct Block {
     pub hash: String,
 }
 
+
 impl Block {
     pub fn new(index: u64, data: String, previous_hash: String) -> Self {
         let timestamp = Utc::now().timestamp();
